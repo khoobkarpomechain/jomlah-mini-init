@@ -13,7 +13,7 @@ const count = ref(0);
         <p>
           <strong>Change log:</strong>
         </p>
-        <p>- Add Mini app base config</p>
+        <p>- Add vue-tg but not working yet</p>
       </div>
       <button @click="count++">Count is: {{ count }}</button>
     </div>
@@ -34,7 +34,7 @@ const count = ref(0);
 }
 
 .card {
-  width: 100dvw;
+  width: 100%;
   max-width: 420px;
   height: auto;
   background-color: oklch(0.1766 0.028 261.692);
