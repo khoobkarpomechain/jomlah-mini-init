@@ -9,6 +9,12 @@ const count = ref(0);
       <p>
         Welcome to your Nuxt 3 app. Build to test and showcase telegram bot.
       </p>
+      <div class="changelog">
+        <p>
+          <strong>Change log:</strong>
+        </p>
+        <p>- Add Mini app base config</p>
+      </div>
       <button @click="count++">Count is: {{ count }}</button>
     </div>
   </div>
@@ -41,10 +47,10 @@ const count = ref(0);
   font-size: 1.25rem;
 }
 
-.card p {
+.card > p {
   font-size: 1rem;
   line-height: 1.5;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .card button {
@@ -66,5 +72,13 @@ const count = ref(0);
 
 .card button:active {
   background-color: oklch(55.5% 0.163 48.998);
+}
+
+.changelog {
+  background-color: oklch(13% 0.028 261.692 / 30%);
+  border: 1px solid oklch(13% 0.028 261.692);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
 }
 </style>
